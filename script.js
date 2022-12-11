@@ -4,7 +4,8 @@ let stats = null;
 
 async function display_data() {
 
-    const fetched_data = await get_extinction_data("304629682769494026")
+    let discord_id = document.querySelector("#user_id").value;
+    const fetched_data = await get_extinction_data(discord_id)
 
     stats = {
         
@@ -39,11 +40,11 @@ async function display_data() {
 async function get_extinction_data(user) {
 
  
-
+    
 
     url = "https://api.gtaliferp.fr:8443/v1/extinction/profiles/discord/" + user
 
-    let response = await fetch("https://api.gtaliferp.fr:8443/v1/extinction/profiles/discord/304629682769494026", {
+    let response = await fetch(url, {
         "referrerPolicy": "strict-origin-when-cross-origin",
         "body": null,
         "method": "GET"
@@ -56,4 +57,3 @@ async function get_extinction_data(user) {
     return data
 
 }
-display_data()
