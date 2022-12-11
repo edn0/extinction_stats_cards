@@ -9,63 +9,63 @@
         <div id="main_wrapper">
             <div id="wrapper">
                 <img id="player_avatar" src="https://cdn.discordapp.com/avatars/304629682769494026/4610ce0d4c7f94a997ca37077488b91b.png" style="width: 240px;height: 240px;border-radius: 50%;margin: 16px;flex-shrink: 0;">
-                <div id="player_name" style="color: white;margin-bottom: 8px;">
+                <div id="player_name" class="stat" style="color: white;margin-bottom: 8px;">
                 
                 </div>
                 <div id="player_stats" style="width: 720px;height: 700px;color: white;display: flex;flex-flow: column wrap;">
-                    <div id="level" style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);">
+                    <div id="level"  style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);">
                         👾Niveau👾
 
-                        <div id="level" style="text-align:center;font-size: 44px;width:360px;height:140px;">
+                        <div id="level" class="stat" style="text-align:center;font-size: 44px;width:360px;height:140px;">
                     
                         </div>
                     </div>
-                    <div id="zombie" style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);align-items: center;">🧟Zombies tués🧟<div id="zombie" style="font-size: 44px;width:360px;height:140px;">
+                    <div id="zombie" style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);align-items: center;">🧟Zombies tués🧟<div id="zombie" class="stat" style="font-size: 44px;width:360px;height:140px;">
 
                     </div>
                     </div>
                     <div id="pvp_kill" style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);">
-                        ⚔️Opps tués⚔️<div id="pvp_kill" style="text-align:center;font-size: 44px;width:360px;height:140px;">
+                        ⚔️Opps tués⚔️<div id="pvp_kill" class="stat" style="text-align:center;font-size: 44px;width:360px;height:140px;">
                         </div>
                     </div>
                     <div id="death" style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);">
-                        🩸Morts🩸<div id="death" style="text-align:center;font-size: 44px;width:360px;height:140px;">
+                        🩸Morts🩸<div id="death" class="stat" style="text-align:center;font-size: 44px;width:360px;height:140px;">
 
                         
                     </div>
                     </div>
                     <div id="ratio" style="display: flex;flex-direction: column;width:360px;height:140px;border-radius: 0 0 0 20px;background-color: rgba(0,0,0,0.75);">
-                        〽Ratio〽<div id="ratio" style="text-align:center;font-size: 44px;width:360px;height:140px;">
+                        〽Ratio〽<div id="ratio" class="stat" style="text-align:center;font-size: 44px;width:360px;height:140px;">
 
                     
                     </div>
                     </div>
                     <div id="played_time" style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);">
-                        🕒Heures de jeu🕒<div id="played_time" style="text-align:center;font-size: 44px;width:360px;height:140px;">
+                        🕒Heures de jeu🕒<div id="played_time" class="stat" style="text-align:center;font-size: 44px;width:360px;height:140px;">
 
                     
                     </div>
                     </div>
                     <div id="zombie_redzone" style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);">
-                        🧟Zombies tués Redzone🔴<div id="zombie_redzone" style="text-align:center;font-size: 44px;width:360px;height:140px;">
+                        🧟Zombies tués Redzone🔴<div id="zombie_redzone"class="stat" style="text-align:center;font-size: 44px;width:360px;height:140px;">
 
                     
                     </div>
                     </div>
                     <div id="kill_redzone" style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);">
-                        ⚔️Opps tués Redzone🔴<div id="kill_redzone" style="text-align:center;font-size: 44px;width:360px;height:140px;">
+                        ⚔️Opps tués Redzone🔴<div id="kill_redzone" class="stat"style="text-align:center;font-size: 44px;width:360px;height:140px;">
 
                     
                     </div>
                     </div>
                     <div id="death_redzone" style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);">
-                        🩸Morts Redzone🔴<div id="death_redzone" style="text-align:center;font-size: 44px;width:360px;height:140px;">
+                        🩸Morts Redzone🔴<div id="death_redzone" class="stat"style="text-align:center;font-size: 44px;width:360px;height:140px;">
 
                     
                     </div>
                     </div>
                     <div id="ratio_deadzone" style="display: flex;flex-direction: column;width:360px;height:140px;background-color: rgba(0,0,0,0.75);border-radius: 0 0 20px 0;">
-                        〽Ratio Redzone🔴<div id="ratio_deadzone" style="text-align:center;font-size: 44px;width:360px;height:140px;">
+                        〽Ratio Redzone🔴<div id="ratio_deadzone"class="stat" style="text-align:center;font-size: 44px;width:360px;height:140px;">
 
                     
                     </div>
@@ -73,6 +73,7 @@
                 </div>
             </div>
         </div>
+        <button id="search_btn" onclick="display_data"></button>
 </body>
 
 <script src="script.js"></script>

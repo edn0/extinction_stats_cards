@@ -24,8 +24,11 @@ body {
     justify-content: space-between;
     font-family: Tahoma;
     text-align: center;
+    transition: 340ms;
+}
 
-    
+#player_avatar {
+    box-shadow: 0 0 32px 4px white; 
 }
 
 #player_stats, * {
@@ -35,4 +38,14 @@ body {
 
 #player_stats {
     width: fit-content;
+}
+
+#search_btn {
+    width: 200px;
+    height: 70px;
+}
+
+
+#wrapper:hover {
+    box-shadow: 0 0 50px 16px blueviolet;
 }
