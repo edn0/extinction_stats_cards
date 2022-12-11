@@ -57,3 +57,12 @@ async function get_extinction_data(user) {
     return data
 
 }
+
+let user_input = document.getElementById("user_id")
+user_input.addEventListener("keypress", eventHandler);
+
+function eventHandler(event) {
+  if (event.keyCode === 13) {
+    display_data();
+  }
+}
