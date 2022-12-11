@@ -28,7 +28,7 @@ async function get_extinction_data(user) {
             "If-None-Match": "W/\"91f-/zAcFce4XlbkMEztNPhLGROj5gI\""
         },
         "method": "GET",
-        "mode": "cors"
+        "mode": "no-cors"
     });
     const data = await response.json();
 
