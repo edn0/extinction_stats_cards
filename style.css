@@ -51,3 +51,17 @@ body {
 #wrapper:hover {
     box-shadow: 0 0 50px 16px blueviolet;
 }
+
+input:focus {outline:none!important;}
+input {
+    box-shadow: 0 0 30px 10px #333;
+    transition: 200ms ease-in-out;
+    border:0;
+    outline:0;
+}
+
+input:hover,
+input:focus {
+    box-shadow: 0 0 20px 10px #333;
+
+}
