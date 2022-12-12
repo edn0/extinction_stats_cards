@@ -9,7 +9,9 @@ body {
     width: 100%;
     height: fit-content;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 #wrapper {
     text-align:center;

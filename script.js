@@ -63,6 +63,7 @@ user_input.addEventListener("keypress", eventHandler);
 
 function eventHandler(event) {
   if (event.keyCode === 13) {
+    
     display_data();
   }
 }

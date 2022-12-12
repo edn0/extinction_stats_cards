@@ -6,7 +6,7 @@
 		<style></style>
 	</head>
     <body>
-        <div id="main_wrapper">
+        <div id="main_wrapper" style="background: url('https://i.ytimg.com/vi/824NmqWgxVw/maxresdefault.jpg');background-size:cover;background-position: center;display: flex;flex-flow: column; justify-content: center;">
             <div id="wrapper">
                 <img id="player_avatar" src="https://cdn.discordapp.com/avatars/304629682769494026/4610ce0d4c7f94a997ca37077488b91b.png" style="width: 240px;height: 240px;border-radius: 50%;margin: 16px;flex-shrink: 0;">
                 <div id="player_name" class="stat" style="color: white;margin-bottom: 8px;">
@@ -69,13 +69,13 @@
 
                     
                     </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <div style="display: flex; align-items: center; width: 300px; height: 40px;">
-            <input type="text" id="user_id" style="height: 30px; width: 160;" placeholder="Discord ID"/>
-            <button id="search_btn" onclick="display_data()">Chercher</button>
+        <div id="search_box" style="display: flex; flex-flow: column;align-items: center; justify-content:center; width: 100%; height: 160px; gap: 8px;">
+            <input type="text" id="user_id" style="height: 60px; width: 420; text-align: center; border: 0; border-radius: 4px; background-color: rgba(51, 51, 51, 0.781); color: white" placeholder="Discord ID"/>
+            <button id="search_btn" onclick="display_data()" style="background-color: rgba(137, 43, 226, 0.836); width: 90px; height: 40px; color: white; border: 0; border-radius: 4px;">Chercher</button>
+        </div>
         </div>
 </body>
 
